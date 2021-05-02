@@ -22,6 +22,7 @@ RUN	wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.ph
 && mv wp-cli.phar /usr/local/bin/wp
 RUN	mkdir /var/www/localhost
 RUN	mkdir /etc/nginx/ssl
+RUN	chmod 700 /etc/nginx/ssl
 #RUN	cp /var/www/html/index.nginx-debian.html /var/www/localhost/
 RUN	mkdir /var/www/localhost/wordpress
 RUN	mkdir /var/www/localhost/test
